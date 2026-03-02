@@ -16,7 +16,8 @@
   background: white;
   padding: 30px;
   border-radius: 16px;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   text-align: center;
   animation: fadeIn 0.3s ease-in-out;
 }

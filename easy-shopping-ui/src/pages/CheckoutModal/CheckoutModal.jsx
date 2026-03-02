@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Cart.css";
+import "./CheckoutModal.css";
 
 export default function CheckoutModal({
   onClose,

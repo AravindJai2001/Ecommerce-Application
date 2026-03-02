@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProductService from "../../services/ProductService";
-import "./order.css";
-import OrderItemModal from "./OrderItemModal";
+import "./Orders.css";
+import OrderItemModal from "../OrderItemModal/OrderItemModal";
 
 export default function Orders() {
   const [orders, setOrders] = useState([]);
@@ -36,6 +36,7 @@ export default function Orders() {
         {orders.length === 0 ? (
           <div className="empty-order">
             <h2>Order is Empty</h2>
+            <img src="./no-order.png" alt="No orders" />
           </div>
         ) : (
           <>

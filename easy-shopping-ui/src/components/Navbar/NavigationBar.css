@@ -1,0 +1,41 @@
+.nav-bar {
+  background: linear-gradient(90deg, #072359, #2e18a9, #5953ca);
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  display: flex;
+  border-radius: 10px;
+}
+
+.nav-bar-details {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-bar-details h2 {
+  margin: 0;
+}
+
+.nav-bar-details p {
+  margin: 0;
+  cursor: pointer;
+}
+
+.profile-btn img {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.profile-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  transition: 0.2s ease;
+}
+
+.profile-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}

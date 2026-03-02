@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ProductService from "../services/ProductService";
+import ProductService from "../../services/ProductService";
 import { toast } from "react-toastify";
+import "./AddProduct.css";
 
 export default function AddProduct() {
   const [product, setProduct] = useState("");

@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import "./Cart.css";
 import { useNavigate } from "react-router-dom";
-import CheckoutModal from "./CheckoutModal";
-import ProductService from "../services/ProductService";
+import CheckoutModal from "../CheckoutModal/CheckoutModal";
+import ProductService from "../../services/ProductService";
 import { toast } from "react-toastify";
-import OrderResponse from "./OrderModal/OrderResponse";
+import OrderResponse from "../OrderModal/OrderResponseModal";
 
 export default function Cart() {
   const [orderResponse, setOrderResponse] = useState(null);

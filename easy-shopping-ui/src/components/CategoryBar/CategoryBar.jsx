@@ -1,8 +1,9 @@
+import "./CategoryBar.css";
 export default function CategoryBar({ category, setCategory }) {
   const categories = ["All", "Fashion", "Electronics", "Mobiles", "Appliances"];
 
   return (
-    <div style={{ display: "flex", gap: "10px", marginTop: "0px" }}>
+    <div className="cat-bar">
       {categories.map((cat) => (
         <button
           key={cat}

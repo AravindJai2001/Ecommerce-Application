@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "./OrderModal.css";
+import "./OrderResponseModal.css";
 
 export default function OrderResponse({ orderResponse, onClose }) {
   const navigate = useNavigate();
