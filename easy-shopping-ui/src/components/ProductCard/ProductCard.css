@@ -8,7 +8,9 @@
   cursor: pointer;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   font-size: 14px;
-  transition: 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   display: flex;
   flex-direction: column;
@@ -18,6 +20,27 @@
 @media (max-width: 768px) {
   .home-product-card {
     max-width: 100%;
+  }
+
+  /* Use a subtle movement on touch devices rather than scaling too large */
+  .home-product-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 480px) {
+  .home-product-card {
+    padding: 8px;
+    font-size: 13px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .home-product-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .home-product-card img {
+    max-height: 130px;
   }
 }
 

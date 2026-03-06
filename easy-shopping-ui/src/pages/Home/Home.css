@@ -65,10 +65,19 @@
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .home-item-details {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    transition: none;
+  }
+}
+
 @media (max-width: 480px) {
   .home-item-details {
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
+    transition: none;
   }
 }
 
