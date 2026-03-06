@@ -12,7 +12,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(org.springframework.web.servlet.config.annotation.CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:3000", "https://easy-shopping-ui.onrender.com")
+                        .allowedOrigins("http://localhost:3000", "https://easy-shopping-ui.vercel.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }
