@@ -71,7 +71,7 @@ export default function UpdateProduct() {
         {/* Existing Image Preview */}
         <div className="imageBox">
           <img
-            src={`http://localhost:8080/product/${id}/image`}
+            src={`${process.env.REACT_APP_API_URL}/product/${id}/image`}
             alt="product"
             className="image"
           />

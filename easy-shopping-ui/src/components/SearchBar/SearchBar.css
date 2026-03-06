@@ -1,6 +1,15 @@
 .search-bar {
-  width: 80%;
+  /* width: 80%; */
   padding: 10px;
   border-radius: 8px;
   border: 1px solid gray;
+  width: 100%; /* Take full width of its parent container */
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 290px;
+  }
 }

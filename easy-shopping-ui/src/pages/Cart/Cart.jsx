@@ -122,7 +122,7 @@ export default function Cart() {
                 <div className="cart-item" key={item.id}>
                   <div className="cart-product">
                     <img
-                      src={`http://localhost:8080/product/${item.id}/image`}
+                      src={`${process.env.REACT_APP_API_URL}/product/${item.id}/image`}
                       alt={item.name}
                     />
                     <div>

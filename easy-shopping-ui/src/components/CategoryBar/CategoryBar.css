@@ -1,7 +1,16 @@
 .cat-bar {
   display: flex;
   gap: 10px;
-  margin-top: 0px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 5px;
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  .cat-bar {
+    gap: 4px;
+  }
 }
 
 .cat-btn {
@@ -11,6 +20,14 @@
   cursor: pointer;
   background-color: #ddd;
   color: black;
+}
+
+.cat-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-btn {
+  flex: 0 0 auto;
 }
 
 .cat-btn:hover {

@@ -33,7 +33,7 @@ export default function ProductDetails() {
       <div className="product-details-card">
         <div className="product-image-box">
           <img
-            src={`http://localhost:8080/product/${product.id}/image`}
+            src={`${process.env.REACT_APP_API_URL}/product/${product.id}/image`}
             alt={product.name}
           />
         </div>

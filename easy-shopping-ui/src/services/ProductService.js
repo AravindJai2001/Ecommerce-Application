@@ -1,18 +1,16 @@
-import axios from "axios";
-
-const BASE_URL = "http://localhost:8080/product";
+import api from "./api";
 
 class ProductService {
   getAllProducts() {
-    return axios.get(`http://localhost:8080/products`);
+    return api.get("/products");
   }
 
   getProductById(id) {
-    return axios.get(`http://localhost:8080/product/${id}`);
+    return api.get(`/product/${id}`);
   }
 
   addProduct(formData) {
-    return axios.post(`http://localhost:8080/product`, formData, {
+    return api.post("/product", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
@@ -20,7 +18,7 @@ class ProductService {
   }
 
   updateProduct(id, formData) {
-    return axios.put(`http://localhost:8080/product/${id}`, formData, {
+    return api.put(`/product/${id}`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
@@ -28,15 +26,15 @@ class ProductService {
   }
 
   deleteProduct(id) {
-    return axios.delete(`${BASE_URL}/${id}`);
+    return api.delete(`/product/${id}`);
   }
 
   placeOrder(order) {
-    return axios.post(`http://localhost:8080/order/place`, order);
+    return api.post("/order/place", order);
   }
 
   getAllOrders() {
-    return axios.get(`http://localhost:8080/orders`);
+    return api.get("/orders");
   }
 }
 

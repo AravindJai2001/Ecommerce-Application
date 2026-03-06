@@ -10,10 +10,13 @@ export default function ProductCard({ product }) {
       className="home-product-card"
     >
       <img
-        src={`http://localhost:8080/product/${product.id}/image`}
+        src={`${process.env.REACT_APP_API_URL}/product/${product.id}/image`}
         alt={product.name}
       />
-      <h4>{`${product.brand} ${product.name}`}</h4>
+      <div>
+        <h4>{`${product.brand} ${product.name}`}</h4>
+      </div>
+
       <p>₹ {product.price}</p>
     </div>
   );

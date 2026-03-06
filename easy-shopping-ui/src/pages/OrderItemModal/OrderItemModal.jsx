@@ -35,7 +35,7 @@ export default function OrderItemModal({ onClose, orderItem }) {
               >
                 <div className="product-details">
                   <img
-                    src={`http://localhost:8080/product/${item.productId}/image`}
+                    src={`${process.env.REACT_APP_API_URL}/product/${item.productId}/image`}
                     alt={item.productName}
                   />
                   <div className="productItem-details">
