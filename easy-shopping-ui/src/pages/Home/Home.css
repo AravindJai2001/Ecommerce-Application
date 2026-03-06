@@ -69,7 +69,6 @@
   .home-item-details {
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    transition: none;
   }
 }
 
@@ -77,7 +76,6 @@
   .home-item-details {
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    transition: none;
   }
 }
 
